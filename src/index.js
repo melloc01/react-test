@@ -18,7 +18,7 @@ ReactDOM.render(
         <BrowserRouter>
             <div>
                 <Switch>
-                    <Route path="/:id" component={Post} />
+                    <Route path="/:id([0-9]+)" component={Post} />
                     <Route path="/" component={App} />
                 </Switch>
             </div>
